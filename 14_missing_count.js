@@ -17,3 +17,8 @@ var missingNumber = function(nums) {
 
     return total - missingCount;
 };
+
+
+// oneline  return -nums.reduce((acc,num,i)=> acc+num-i-1,0);
+
+// explanation https://www.youtube.com/watch?v=iCrQG_kbuP0
