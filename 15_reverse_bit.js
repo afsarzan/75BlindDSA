@@ -14,3 +14,14 @@ var reverseBits = function(n) {
 
     return result >>>0
 };
+
+
+/* another approach
+
+for {
+
+    result <<=1;
+    if((n&1) ==1) result ++;    
+    n >>=1;
+}
+return result;
