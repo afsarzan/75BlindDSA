@@ -7,3 +7,14 @@ class Solution:
                 return num
             else:
                 exit.add(num)
+
+
+# Best solution:
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        n = len(nums)
+        arr = [0]*n
+        for i in nums:
+            if(arr[i]==-1):
+                return i
+            arr[i] = -1
