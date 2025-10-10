@@ -3,7 +3,6 @@
  * @return {number[][]}
  */
 var merge = function (intervals) {
-    let ans = [];
     if (intervals == null || intervals.length == 0) return ans;
 
     if (!intervals.length) return [];
