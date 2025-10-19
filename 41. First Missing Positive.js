@@ -34,7 +34,10 @@ var firstMissingPositive = function (nums) {
 };
 
 function swap(nums, i, ci) {
-    const temp = nums[i];
-    nums[i] = nums[ci];
-    nums[ci] = temp
+    // const temp = nums[i];
+    // nums[i] = nums[ci];
+    // nums[ci] = temp
+    [nums[i], nums[ci]] = [nums[ci], nums[i]];
 }
+
+ 
