@@ -10,13 +10,22 @@ var missingNumber = function (nums) {
     //     }
     // }
 
- let n = nums.length;
-    let totalsum = n * (n+1)/2;
-    let partialsum = 0
-    for(let i = 0;i<n;i++){
-        partialsum = partialsum + nums[i];
-    }
+//  let n = nums.length;
+//     let totalsum = n * (n+1)/2;
+//     let partialsum = 0
+//     for(let i = 0;i<n;i++){
+//         partialsum = partialsum + nums[i];
+//     }
     
-    return totalsum-partialsum
+//     return totalsum-partialsum
+
+    let n = nums.length;
+    let xor1 = 0;
+    let xor2 = 0;
+    for (let i = 0; i < n; i++) {
+        xor1 = xor1 ^ nums[i];
+        xor2 = xor2 ^ (i + 1);
+    }
+    return xor1 ^ xor2;
     
 };
